@@ -3,52 +3,52 @@
       {
         "name": "Usuario 1",
         "email": "usuario1@example.com",
-        "password": "contraseña1"
+        "password": "Contraseña1"
       },
       {
         "name": "Usuario 2",
         "email": "usuario2@example.com",
-        "password": "contraseña2"
+        "password": "Contraseña2"
       },
       {
         "name": "Usuario 3",
         "email": "usuario3@example.com",
-        "password": "contraseña3"
+        "password": "Contraseña3"
       },
       {
         "name": "Usuario 4",
         "email": "usuario4@example.com",
-        "password": "contraseña4"
+        "password": "Contraseña4"
       },
       {
         "name": "Usuario 5",
         "email": "usuario5@example.com",
-        "password": "contraseña5"
+        "password": "Contraseña5"
       },
       {
         "name": "Usuario 6",
         "email": "usuario6@example.com",
-        "password": "contraseña6"
+        "password": "Contraseña6"
       },
       {
         "name": "Usuario 7",
         "email": "usuario7@example.com",
-        "password": "contraseña7"
+        "password": "Contraseña7"
       },
       {
         "name": "Usuario 8",
         "email": "usuario8@example.com",
-        "password": "contraseña8"
+        "password": "Contraseña8"
       },
       {
         "name": "Usuario 9",
         "email": "usuario9@example.com",
-        "password": "contraseña9"
+        "password": "Contraseña9"
       },
       {
         "name": "Usuario 10",
         "email": "usuario10@example.com",
-        "password": "contraseña10"
+        "password": "Contraseña10"
       }
     ]
   }

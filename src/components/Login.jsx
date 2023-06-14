@@ -26,6 +26,7 @@ const Login = () => {
   const login = () => {
     let valid = true;
     let message = "";
+    let found = false;
     if (!email) {
       valid = false;
       message = "Por favor introduzca un correo electrónico";
@@ -35,22 +36,41 @@ const Login = () => {
     }
 
     let usr = users.find((user) => user.email === email);
-
-    if (!usr) {
-      valid = false;
-      return alert("Correo electrónico invalido");
-    }
-
-    if(usr.password!== pass){
-        valid = false
-        return alert('Contraseña invalida')
-    }
-
+    valid = validateCredentials();
     if (valid) {
-      alert(`Bienvenido ${usr.name}`)
-    } else {
-      return alert(message);
+      if (!usr) {
+        valid = false;
+        return alert(
+          "No se encontró el correo electrónico en la base de datos"
+        );
+      }
+
+      if (usr.password !== pass) {
+        valid = false;
+        return alert("Contraseña incorrecta");
+      }
     }
+    console.log(valid);
+    if (valid) {
+      alert(`Bienvenido ${usr.name}`);
+    }
+  };
+
+  const validateCredentials = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+    if (!emailRegex.test(email)) {
+      alert("El correo electrónico no es válido");
+      return false;
+    }
+
+    if (!passwordRegex.test(pass)) {
+      alert(
+        "La contraseña debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un dígito"
+      );
+      return false;
+    }
+    return true
   };
 
   const change = () => {
