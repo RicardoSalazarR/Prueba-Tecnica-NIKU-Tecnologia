@@ -13,7 +13,7 @@ const Login = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("../../public/data/users.json");
+        const response = await axios.get("../../data/users.json");
         setUsers(response.data.users);
       } catch (error) {
         console.error("Error fetching user data:", error);
