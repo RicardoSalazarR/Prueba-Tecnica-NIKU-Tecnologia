@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hide {
@@ -12,8 +12,12 @@
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(160deg, rgb(105, 42, 156), rgb(58, 181, 230), rgb(87, 220, 87), white);
-  background-size: 400% 400%;
+  background: linear-gradient(
+    20deg,
+    rgb(105, 42, 156),
+    rgb(58, 138, 230)
+  );
+  background-size: 100% 100%;
 }
 
 .login-container {
@@ -28,7 +32,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .login-form {
@@ -64,7 +67,7 @@ body {
 .show-icon {
   position: absolute;
   height: 20px;
-  right: 50px;
+  right: 20px;
   z-index: 3;
 }
 
@@ -95,20 +98,33 @@ body {
 .primary-button {
   width: 100%;
 }
-/*–––––––––––––––––––––––––––––––––––––HOMe––––––––––––––––––––––––––––––––––––––––––-*/
-.clock-container{
+/*–––––––––––––––––––––––––––––––––––––HOME––––––––––––––––––––––––––––––––––––––––––-*/
+.clock-container {
   text-align: end;
-  padding-right: 3rem;
-  padding-top: 2rem;
+  padding: 2rem 5rem;
   font-size: 40px;
-
-}
-
-.images-container{
   display: flex;
-  width: 100%;
+  justify-content: space-between;
 }
 
-.images-container>img{
-  width: 15%;
+.images-main-container{
+  width: 90%;
+  margin:  15% auto;
+}
+
+.image-container{
+  width: 80% !important;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 100%;
+  max-height: 30vh;
+}
+
+.cat-image {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  max-height: 30vh;
+  object-fit: cover;
+  margin: auto;
 }
