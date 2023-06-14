@@ -10,22 +10,39 @@ const Home = () => {
   const [cats, setCats] = useState([]);
   const [time, setTime] = useState(new Date());
   const userName = useSelector(state => state.username);
-  console.log(userName);
-
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide:0,
+    responsive:[
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   };
   useEffect(() => {
     axios
       .get("https://api.thecatapi.com/v1/breeds?limit=10&page=0", getConfig())
       .then((res) => {
         setCats(res.data);
-        console.log(cats[0]?.image);
-        console.log(cats);
       });
 
     const timer = setInterval(() => {
@@ -46,7 +63,7 @@ const Home = () => {
       <div className="images-main-container">
       <Slider {...settings}>
         {cats.map((cat) => (
-          <div className="image-container">
+          <div className="image-container" key={cat.id}>
             <img src={cat.image.url} alt="" className="cat-image"/>
           </div>
         ))}

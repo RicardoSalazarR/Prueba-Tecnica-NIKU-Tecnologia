@@ -86,7 +86,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <p className="gray">
+      <p className="login-text">
         Hola, por favor ingresa tus datos para iniciar sesión
       </p>
       <form action="" className="login-form" onSubmit={handleSubmit(login)}>
