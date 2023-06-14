@@ -1,55 +1,54 @@
 {
-    "users": [
-      {
-        "name": "Usuario 1",
-        "email": "usuario1@example.com",
-        "password": "Contraseña1"
-      },
-      {
-        "name": "Usuario 2",
-        "email": "usuario2@example.com",
-        "password": "Contraseña2"
-      },
-      {
-        "name": "Usuario 3",
-        "email": "usuario3@example.com",
-        "password": "Contraseña3"
-      },
-      {
-        "name": "Usuario 4",
-        "email": "usuario4@example.com",
-        "password": "Contraseña4"
-      },
-      {
-        "name": "Usuario 5",
-        "email": "usuario5@example.com",
-        "password": "Contraseña5"
-      },
-      {
-        "name": "Usuario 6",
-        "email": "usuario6@example.com",
-        "password": "Contraseña6"
-      },
-      {
-        "name": "Usuario 7",
-        "email": "usuario7@example.com",
-        "password": "Contraseña7"
-      },
-      {
-        "name": "Usuario 8",
-        "email": "usuario8@example.com",
-        "password": "Contraseña8"
-      },
-      {
-        "name": "Usuario 9",
-        "email": "usuario9@example.com",
-        "password": "Contraseña9"
-      },
-      {
-        "name": "Usuario 10",
-        "email": "usuario10@example.com",
-        "password": "Contraseña10"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "Contraseña1"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "Contraseña2"
+    },
+    {
+      "name": "Michael Johnson",
+      "email": "michael@example.com",
+      "password": "Contraseña3"
+    },
+    {
+      "name": "Emily Brown",
+      "email": "emily@example.com",
+      "password": "Contraseña4"
+    },
+    {
+      "name": "David Wilson",
+      "email": "david@example.com",
+      "password": "Contraseña5"
+    },
+    {
+      "name": "Sophia Taylor",
+      "email": "sophia@example.com",
+      "password": "Contraseña6"
+    },
+    {
+      "name": "James Anderson",
+      "email": "james@example.com",
+      "password": "Contraseña7"
+    },
+    {
+      "name": "Olivia Martinez",
+      "email": "olivia@example.com",
+      "password": "Contraseña8"
+    },
+    {
+      "name": "Benjamin Thomas",
+      "email": "benjamin@example.com",
+      "password": "Contraseña9"
+    },
+    {
+      "name": "Emma Garcia",
+      "email": "emma@example.com",
+      "password": "Contraseña10"
+    }
+  ]
+}

@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import "boxicons";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { changeName } from '../store/slices/username.slice'
+
 
 const Login = () => {
   const { handleSubmit } = useForm();
@@ -9,6 +13,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -50,9 +56,10 @@ const Login = () => {
         return alert("Contraseña incorrecta");
       }
     }
-    console.log(valid);
     if (valid) {
       alert(`Bienvenido ${usr.name}`);
+      dispatch(changeName(usr.name))
+      navigate('/')
     }
   };
 
